@@ -1,0 +1,19 @@
+Элемент:
+<a class="home-link2 headline__personal-enter home-link2_color_black" data-statlog="2headline.enter" href="https://passport.yandex.ru/auth?retpath=https%3A%2F%2Fsso.passport.yandex.ru%2Fpush%3Fretpath%3Dhttps%253A%252F%252Fya.ru%252F%253Fnr%253D1%2526redirect_ts%253D1761667970.00000%2526utm_referrer%253Dhttps%25253A%25252F%25252Fwww.google.com%25252F%26uuid%3D2ffcecbe-1797-4514-84ec-894a7a51c48c&amp;msid=1761667971136891-17188350476896563470-balancer-l7leveler-kubr-yp-klg-284-BAL&amp;origin=home_yaru_desktop_new" target="_self">Войти</a>
+
+a - tag 
+ключ = значение - атрбитуты тега
+    class="home-link2 headline__personal-enter home-link2_color_black" - атрбут [css-]класс
+    href="https://passport.yandex.ru/auth? - атрибут href
+    target="_self" - атрибут target
+    текст - Войти
+
+
+$$('#text') -  поиск по id (найдет все по id)
+$$('[id=text]') - поиск по id (найдет все по id)
+$$('input')  - выведет все по input
+если использовать $, то получается возвращает первое значение.
+$('input')  - пример.
+
+если поиск идет по элементу то 
+$$ ('[class]')
