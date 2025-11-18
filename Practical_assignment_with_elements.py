@@ -21,7 +21,6 @@ print(f'{len(list_delete)} "{delete_text}"')
 
 browser.quit()
 
-
 """ Клик по кнопке без id
 1. Открыть страницу http://uitestingplayground.com/dynamicid
 2. Кликнуть на синюю кнопку
