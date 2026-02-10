@@ -107,4 +107,19 @@ x,y, height, widht
 .implicitly_wait(10) - неявное ожидание (ждем элементы на страницы)
 element = webdriverWait(driver,10).until(EC.presence_of_element_located(By.ID, '#text')) - ожидание изменений каких либо - изменение цвета, исчезновение объекта и т.д.
 
+----------------------------------------------------------
+            Клавиатура
+----------------------------------------------------------
 
+
+input = driver.find_element(By.CSS_SELECTOR, '#newButtonName')
+chain = ActionChains(driver)  - вызываем метод
+
+chain.send_keys_to_element(input,'Selenium') - вводим значение с клавиатуры
+    .key_down(Keys.LEFT_SHIFT)\ - зажимаем шифт
+    .send_keys(Keys.ARROW_UP)\ - нажимаем кнопку вверх
+    .key_up(Keys.LEFT_SHIFT)\ - отпускае шифт
+    .pause(3)\ - пауза
+    .key_down(Keys.CONTROL)\ - зажимаем клавишу контрл
+    .send_keys('xvvvvv')\ - нажимаем символы
+    .perform() - запускаем выполненоеи скрипта.
